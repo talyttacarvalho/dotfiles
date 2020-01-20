@@ -1,0 +1,33 @@
+- defaults:
+    link:
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: gitconfig
+    ~/.vimrc: vimrc
+    ~/.zshrc: 
+        force: true
+        path: 'zsh/zshrc'
+    ~/.unsplash/unsplash: unsplash/unsplash.sh
+
+- shell:
+    -
+        command: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Install oh-my-zsh
+    -
+        command: "rm -f ~/.zshrc && ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc"
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Overwrite oh-my-zsh default .zshrc template
+    -
+        command: "./crontab.sh"
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Add crontab to change wallpaper
