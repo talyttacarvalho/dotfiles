@@ -109,8 +109,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-alias update="sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y"
+# alias update="sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y"
 
 alias unsplash="$HOME/.unsplash/unsplash.sh"
+
+alias vpnsoftplan="sudo openfortivpn -c .vpn/softplan.conf"
+
+alias frontsoftplan="$HOME/dev/softplan/frontend"
+alias backsoftplan="$HOME/dev/softplan/backend"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
