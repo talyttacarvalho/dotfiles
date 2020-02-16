@@ -20,6 +20,19 @@
         stderr: true
         description: Install oh-my-zsh
     -
+        command: "~/.dotfiles/zsh/plugins.sh"
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Install ZSH plugins
+
+    -
+        command: "~/.dotfiles/zsh/theme.sh"
+        stdin: true
+        stdout: true
+        stderr: true
+        description: Install ZSH theme
+    -
         command: "rm -f ~/.zshrc && ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc"
         stdin: true
         stdout: true
