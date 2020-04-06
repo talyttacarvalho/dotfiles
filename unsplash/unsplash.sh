@@ -1,6 +1,8 @@
 #!/bin/bash
 
-USER="willianjusten"
+USERS=("willianjusten" "_staticvoid")
+
+USER=${USERS[RANDOM % 2]}
 
 rm /home/lucas/.unsplash/wallpaper.jpg
 wget -O /home/lucas/.unsplash/wallpaper.jpg https://source.unsplash.com/user/$USER/1920x1080
@@ -9,7 +11,6 @@ gsettings set org.gnome.desktop.screensaver picture-uri file:///home/lucas/.unsp
 
 # sudo chmod +x .unsplash.sh
 # ./.unsplash.sh
-
 
 # crontab -e
 # https://crontab.guru/#*_*/20_*_*_*

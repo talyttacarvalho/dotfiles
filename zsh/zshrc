@@ -115,4 +115,8 @@ export DOTNET_ROOT=/opt/dotnet
 
 alias unsplash="$HOME/.unsplash/unsplash.sh"
 
+alias vpnsoftplan="sudo openfortivpn -c $HOME/.vpn/softplan.conf"
+alias frontsoftplan="cd $HOME/dev/softplan/frontend"
+alias backsoftplan="cd $HOME/dev/softplan/backend"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
