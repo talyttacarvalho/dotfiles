@@ -5,7 +5,7 @@ USERS=("willianjusten" "_staticvoid")
 USER=${USERS[RANDOM % 2]}
 
 rm /home/lucas/.unsplash/wallpaper.jpg
-wget -O /home/lucas/.unsplash/wallpaper.jpg https://source.unsplash.com/user/$USER/1920x1080
+wget -O /home/lucas/.unsplash/wallpaper.jpg https://source.unsplash.com/user/$USER/1920x1080 --no-check-certificate
 gsettings set org.gnome.desktop.background picture-uri file:///home/lucas/.unsplash/wallpaper.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///home/lucas/.unsplash/wallpaper.jpg
 
