@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # _write out current crontab
-crontab -l > mycron
+crontab -l >mycron
 # _echo new cron into cron file
-echo "*/15 * * * * /home/lucas/.unsplash/unsplash.sh" >> mycron
+echo "*/3 * * * * /home/lucas/.unsplash/unsplash.sh" >>mycron
 # _install new cron file
 crontab mycron
 rm mycron
