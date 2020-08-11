@@ -2,11 +2,17 @@
 
 `Requires git and sh`
 
+## How to use?
+
+```shellscript
+./setup.sh
+./install
+```
+
 ## Programs
 
 ### Internet
 
-- google chrome
 - firefox
 - franz
 
@@ -16,6 +22,7 @@
 - hyper
 - docker
 - docker-compose
+- nvm
 
 ## Audio and Video
 
@@ -27,13 +34,12 @@
 - peek
 - zsh
 - htop
-- paper icon
 - curl
 - FiraCode Font
 
 ## Configuration
 
 - Natural Scroolling
-- Dock 
-    - Smart hide
-    - Position bottom
+- Dock
+  - Smart hide
+  - Position bottom

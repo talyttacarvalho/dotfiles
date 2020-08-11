@@ -1,6 +1,10 @@
 - defaults:
     link:
       relink: true
+    shell:
+      stdin: true
+      stdout: true
+      stderr: true
 
 - clean: ["~"]
 
@@ -10,32 +14,36 @@
     ~/.zshrc:
       force: true
       path: "zsh/zshrc"
-    ~/.unsplash/unsplash.sh: unsplash/unsplash.sh
+    ~/.unsplash/unsplash.sh:
+      create: true
+      path: unsplash/unsplash.sh
 
 - shell:
+    - command: "./zsh/zsh.sh"
+      description: Install and Set as default ZSH
     - command: 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
-      stdin: true
-      stdout: true
-      stderr: true
       description: Install oh-my-zsh
     - command: "~/.dotfiles/zsh/plugins.sh"
-      stdin: true
-      stdout: true
-      stderr: true
       description: Install ZSH plugins
-
     - command: "~/.dotfiles/zsh/theme.sh"
-      stdin: true
-      stdout: true
-      stderr: true
       description: Install ZSH theme
     - command: "rm -f ~/.zshrc && ln -s ~/.dotfiles/zsh/zshrc ~/.zshrc"
-      stdin: true
-      stdout: true
-      stderr: true
       description: Overwrite oh-my-zsh default .zshrc template
     - command: "./crontab.sh"
-      stdin: true
-      stdout: true
-      stderr: true
       description: Add crontab to change wallpaper
+    - command: "./programer-apps/code.sh"
+      description: Add VS Code App
+    - command: "./programer-apps/hyper.sh"
+      description: Add Hyper Terminal App
+    - command: "./programer-apps/nod.sh"
+      description: Add NVM,LTS Node and Yarn
+    - command: "./programer-apps/docker.sh"
+      description: Add Docker
+    - command: "./apps/franz.sh"
+      description: Add Franz App
+    - command: "./apps/peek.sh"
+      description: Add Peek App
+    - command: "./apps/vlc.sh"
+      description: Add VLC App
+    - command: "./apps/spotify.sh"
+      description: Add Spotify App
