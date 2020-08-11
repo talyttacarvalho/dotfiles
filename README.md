@@ -14,6 +14,7 @@
 ### Internet
 
 - firefox
+- brave
 - franz
 
 ### Development

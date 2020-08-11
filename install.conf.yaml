@@ -41,6 +41,10 @@
       description: Add Docker
     - command: "./apps/franz.sh"
       description: Add Franz App
+    - command: "./apps/firefox.sh"
+      description: Add Firefox Browser
+    - command: "./apps/brave.sh"
+      description: Add Brave Browser
     - command: "./apps/peek.sh"
       description: Add Peek App
     - command: "./apps/vlc.sh"
