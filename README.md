@@ -37,6 +37,7 @@
 - htop
 - curl
 - FiraCode Font
+- Insomnia
 
 ## Configuration
 

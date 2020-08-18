@@ -39,6 +39,8 @@
       description: Add NVM,LTS Node and Yarn
     - command: "./programer-apps/docker.sh"
       description: Add Docker
+    - command: "./programer-apps/insomnia.sh"
+      description: Add Insomnia App
     - command: "./apps/franz.sh"
       description: Add Franz App
     - command: "./apps/firefox.sh"
