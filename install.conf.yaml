@@ -44,7 +44,7 @@
     - command: "./dev-apps/insomnia.sh"
       description: Add Insomnia App
     - command: "./apps/franz.sh"
-      description: Add Firefox Browser
+      description: Add Franz Browser
     - command: "./apps/brave.sh"
       description: Add Brave Browser
     - command: "./apps/peek.sh"
