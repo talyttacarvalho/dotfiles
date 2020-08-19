@@ -35,15 +35,13 @@
       description: Add VS Code App
     - command: "./programer-apps/hyper.sh"
       description: Add Hyper Terminal App
-    - command: "./programer-apps/nod.sh"
+    - command: "./programer-apps/node.sh"
       description: Add NVM,LTS Node and Yarn
     - command: "./programer-apps/docker.sh"
       description: Add Docker
     - command: "./programer-apps/insomnia.sh"
       description: Add Insomnia App
     - command: "./apps/franz.sh"
-      description: Add Franz App
-    - command: "./apps/firefox.sh"
       description: Add Firefox Browser
     - command: "./apps/brave.sh"
       description: Add Brave Browser
