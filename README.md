@@ -7,6 +7,7 @@
 ```shellscript
 ./setup.sh
 ./install
+./dev-apps/configure-node.sh
 ```
 
 ## Programs

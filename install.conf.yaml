@@ -33,15 +33,15 @@
       description: Overwrite oh-my-zsh default .zshrc template
     - command: "./crontab.sh"
       description: Add crontab to change wallpaper
-    - command: "./programer-apps/code.sh"
+    - command: "./dev-apps/code.sh"
       description: Add VS Code App
-    - command: "./programer-apps/hyper.sh"
+    - command: "./dev-apps/hyper.sh"
       description: Add Hyper Terminal App
-    - command: "./programer-apps/node.sh"
-      description: Add NVM,LTS Node and Yarn
-    - command: "./programer-apps/docker.sh"
+    - command: "./dev-apps/nvm.sh"
+      description: Add NVM
+    - command: "./dev-apps/docker.sh"
       description: Add Docker
-    - command: "./programer-apps/insomnia.sh"
+    - command: "./dev-apps/insomnia.sh"
       description: Add Insomnia App
     - command: "./apps/franz.sh"
       description: Add Firefox Browser
