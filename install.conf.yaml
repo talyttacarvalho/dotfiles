@@ -10,7 +10,9 @@
 
 - link:
     ~/.gitconfig: gitconfig
-    ~/.config/Hyper/.hyper.js: hyper
+    ~/.config/Hyper/.hyper.js: 
+      create: true
+      path: hyper
     ~/.zshrc:
       force: true
       path: "zsh/zshrc"
