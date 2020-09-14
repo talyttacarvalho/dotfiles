@@ -33,6 +33,8 @@
       description: Overwrite oh-my-zsh default .zshrc template
     - command: "./crontab.sh"
       description: Add crontab to change wallpaper
+    - command: "./flat-remix-theme.sh"
+      description: Add Flat Remix theme
     - command: "./dev-apps/code.sh"
       description: Add VS Code App
     - command: "./dev-apps/hyper.sh"
